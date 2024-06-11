@@ -8,8 +8,8 @@ const Logout = ({ setRole }) => {
       .get("http://localhost:3001/logout")
       .then((res) => {
         if (res.data.logout) {
-          setRole(" ");
-          navigate("/");
+          setRole("");
+          navigate("/login");
         }
       })
       .catch((err) => {

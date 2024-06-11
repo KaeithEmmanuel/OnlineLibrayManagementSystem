@@ -18,9 +18,15 @@ const Books = () => {
   }, []);
 
   return (
-    <div className='book-list'>
+    <div className='book-list container'>
       {books.map(book => (
-        <BookCard key={book._id} book={book} />
+        <div className="row">
+          <div className="col-md-4">
+            <div className="card mb-4 shadow-sm">
+              <BookCard key={book._id} book={book} />
+            </div>
+          </div>
+        </div>
       ))}
     </div>
   );
