@@ -32,7 +32,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar role={role}/>
+        <Navbar role={role} setRole={setRole}/>
         <Routes>
           <Route path="/" element={<Home  />}></Route>
           <Route path="/books" element={<Books/>}></Route>

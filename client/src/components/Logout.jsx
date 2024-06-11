@@ -9,7 +9,7 @@ const Logout = ({ setRole }) => {
       .then((res) => {
         if (res.data.logout) {
           setRole("");
-          navigate("/login");
+          navigate("/");
         }
       })
       .catch((err) => {
